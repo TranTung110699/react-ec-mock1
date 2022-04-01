@@ -5,18 +5,11 @@ import customAxios from "./customAxios";
 export const authApi = {
   login(loginData: UserLogin): Promise<UserModel> {
     const url = apiUrls.loginApi;
+    console.log("ghi");
     return customAxios.post(url, loginData);
   },
   signUp(signUpData: UserRegister): Promise<UserModel> {
     const url = apiUrls.registerApi;
     return customAxios.post(url, signUpData);
   },
-  // logout(logout: UserModel): Promise<UserModel> {
-  //   const url = apiUrls.registerApi;
-  //   return customAxios.post(url, signUpData);
-  // },
-  // signUp(signUpData: UserRegister): Promise<UserModel> {
-  //   const url = apiUrls.registerApi;
-  //   return customAxios.post(url, signUpData);
-  // },
 };

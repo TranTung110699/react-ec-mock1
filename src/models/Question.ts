@@ -7,6 +7,9 @@ export interface Question {
   answer4: string;
   id: string;
 }
+export interface QuestionModel {
+  questions: Array<Question>;
+}
 
 //post create, edit and delete q
 export interface AdminQuestion {
